@@ -75,6 +75,14 @@ router.delete('/delete-cart/:id',cartController.removeItemFromCart)
 
 router.delete('/empty-cart',jwt,cartController.emptyCartController)
 
+//path to increment
+
+router.get('/increment-cart/:id',cartController.incrementController)
+
+//path to decrement
+
+router.get('/decrement-cart/:id',cartController.decrementController)
+
 
 
 
